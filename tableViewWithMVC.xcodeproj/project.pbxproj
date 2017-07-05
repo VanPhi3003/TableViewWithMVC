@@ -15,6 +15,9 @@
 		787A62D51F0CCA1200E3F0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787A62D31F0CCA1200E3F0C5 /* LaunchScreen.storyboard */; };
 		787A62E01F0CCA1200E3F0C5 /* tableViewWithMVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787A62DF1F0CCA1200E3F0C5 /* tableViewWithMVCTests.swift */; };
 		787A62EB1F0CCA1200E3F0C5 /* tableViewWithMVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787A62EA1F0CCA1200E3F0C5 /* tableViewWithMVCUITests.swift */; };
+		787A62FC1F0CCABD00E3F0C5 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787A62FB1F0CCABD00E3F0C5 /* Work.swift */; };
+		787A63781F0CDBBB00E3F0C5 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787A63771F0CDBBB00E3F0C5 /* Cell.swift */; };
+		787A637A1F0CDC1700E3F0C5 /* CellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787A63791F0CDC1700E3F0C5 /* CellTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		787A62E61F0CCA1200E3F0C5 /* tableViewWithMVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewWithMVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787A62EA1F0CCA1200E3F0C5 /* tableViewWithMVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewWithMVCUITests.swift; sourceTree = "<group>"; };
 		787A62EC1F0CCA1200E3F0C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787A62FB1F0CCABD00E3F0C5 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		787A63771F0CDBBB00E3F0C5 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		787A63791F0CDC1700E3F0C5 /* CellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		787A62BB1F0CCA1200E3F0C5 = {
 			isa = PBXGroup;
 			children = (
+				787A62F91F0CCA5000E3F0C5 /* DataSource */,
+				787A62F81F0CCA4300E3F0C5 /* Model */,
 				787A62C61F0CCA1200E3F0C5 /* tableViewWithMVC */,
 				787A62DE1F0CCA1200E3F0C5 /* tableViewWithMVCTests */,
 				787A62E91F0CCA1200E3F0C5 /* tableViewWithMVCUITests */,
@@ -106,6 +114,8 @@
 				787A62D31F0CCA1200E3F0C5 /* LaunchScreen.storyboard */,
 				787A62D61F0CCA1200E3F0C5 /* Info.plist */,
 				787A62CE1F0CCA1200E3F0C5 /* tableViewWithMVC.xcdatamodeld */,
+				787A63771F0CDBBB00E3F0C5 /* Cell.swift */,
+				787A63791F0CDC1700E3F0C5 /* CellTableViewController.swift */,
 			);
 			path = tableViewWithMVC;
 			sourceTree = "<group>";
@@ -126,6 +136,21 @@
 				787A62EC1F0CCA1200E3F0C5 /* Info.plist */,
 			);
 			path = tableViewWithMVCUITests;
+			sourceTree = "<group>";
+		};
+		787A62F81F0CCA4300E3F0C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				787A62FB1F0CCABD00E3F0C5 /* Work.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		787A62F91F0CCA5000E3F0C5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				787A62D01F0CCA1200E3F0C5 /* tableViewWithMVC.xcdatamodeld in Sources */,
+				787A62FC1F0CCABD00E3F0C5 /* Work.swift in Sources */,
+				787A63781F0CDBBB00E3F0C5 /* Cell.swift in Sources */,
 				787A62CA1F0CCA1200E3F0C5 /* ViewController.swift in Sources */,
 				787A62C81F0CCA1200E3F0C5 /* AppDelegate.swift in Sources */,
+				787A637A1F0CDC1700E3F0C5 /* CellTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +537,7 @@
 				787A62F11F0CCA1300E3F0C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		787A62F21F0CCA1300E3F0C5 /* Build configuration list for PBXNativeTarget "tableViewWithMVCTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +546,7 @@
 				787A62F41F0CCA1300E3F0C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		787A62F51F0CCA1300E3F0C5 /* Build configuration list for PBXNativeTarget "tableViewWithMVCUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +555,7 @@
 				787A62F71F0CCA1300E3F0C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
